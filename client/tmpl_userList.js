@@ -9,6 +9,7 @@ Template.userList.helpers({
 			{no:3, name:"bbb" ,email:"bbb@email.com"},
 			{no:2, name:"ccc" ,email:"ccc@email.com"}
 		];
+		arr = _.sortBy(arr, function(obj){ return obj.no; })
 		return arr;
 	}
 });
