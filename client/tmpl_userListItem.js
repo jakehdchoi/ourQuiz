@@ -1,3 +1,5 @@
+// ~/client/tmpl_userListItem.js
+
 Template.userListItem.helpers({
 	
 });
@@ -12,7 +14,7 @@ Template.userListItem.events({
 		$(evt.target).hide();
 
 		// findAll 함수로 tmpl 안에 오브젝트를 검색할 수 있으며
-		// 브라우저 콘솔에서 확인할 수 있다. 
+		// 콘솔에서 확인할 수 있다. 
 		var tdArr = tmpl.findAll("td");
 		console.log('td들', tdArr);
 	}

@@ -1,3 +1,5 @@
+// ~/client/tmpl_userInput.js
+
 Template.userInput.events({
 	'click button' : function(evt, tmpl){
 

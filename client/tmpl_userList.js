@@ -1,3 +1,5 @@
+// ~/client/tmpl_userList.js
+
 Template.userList.helpers({
 	listName : function(){
 		return "사용자목록";
