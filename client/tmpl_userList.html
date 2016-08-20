@@ -1,12 +1,11 @@
 <template name="userList">
-	<p>{{listName}}</p>	
+	<p>{{listName}}</p>
 
-	{{#each list}}
-	<ul style="list-style:none;">
-		<li> {{no}} </li>
-		<li> {{name}} </li>
-		<li> {{email}} </li>
-	</ul>
-	{{/each}}
-
+	<table class="table table-condensed table-striped">
+		<tbody>
+			{{#each list}}
+				{{>userListItem}}
+			{{/each}}
+		</tbody>
+	</table>
 </template>
