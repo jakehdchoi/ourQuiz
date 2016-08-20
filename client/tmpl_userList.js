@@ -3,14 +3,7 @@ Template.userList.helpers({
 		return "사용자목록";
 	},
 	list : function(){
-		var arr = [
-			{no:4, name:"aaa" ,email:"aaa@email.com"},
-			{no:1, name:"ddd", email:"ddd@email.com"},
-			{no:3, name:"bbb" ,email:"bbb@email.com"},
-			{no:2, name:"ccc" ,email:"ccc@email.com"}
-		];
-		arr = _.sortBy(arr, function(obj){ return obj.no; })
-		return arr;
+		return Users.find( {}, {sort:{no:1}} );
 	}
 });
 
