@@ -14,3 +14,9 @@ Router.route('/userList', {
 		};
 	}
 });
+
+Router.route('/userInput', {
+
+	template : 'userInput'
+	
+});
