@@ -5,7 +5,12 @@ Router.route('/userList', {
 	template : 'userList',
 
 	waitOn : function() {
-		return [ Meteor.subscribe("getAllUsers") ];
+		if(Meteor.userId()){
+			return [ Meteor.subscribe("getAllUsers") ];	
+		}
+		else{
+			return [];
+		}
 	},
 
 	data : function() {
