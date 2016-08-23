@@ -10,7 +10,7 @@ Router.route('/userList', {
 
 	data : function() {
 		return {
-			list : Users.find( {}, {sort:{no:1}}).fetch()
+			userList : Users.find( {}, {sort:{no:1}}).fetch()
 		};
 	}
 });
