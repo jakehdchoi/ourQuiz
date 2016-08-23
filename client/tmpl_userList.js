@@ -14,5 +14,5 @@ Template.userList.events({
 });
 
 Template.userList.rendered = function(){
-
+	Meteor.subscribe("getAllUsers");
 };
