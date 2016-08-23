@@ -1,17 +1,21 @@
 <!-- ~/client/tmpl_userList.html -->
 
 <template name="userList">
-	<p>{{listName}}</p>
+	{{#if currentUser}}
+	<div class="panel panel-default">
+		<p>{{listName}}</p>
 
-	<table class="table table-condensed table-striped">
-		<tbody>
-			{{#each list}}
-				{{>userListItem}}
-			{{/each}}
-		</tbody>
-	</table>
-	
+		<table class="table table-condensed table-striped">
+			<tbody>
+				{{#each list}}
+					{{>userListItem}}
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
+
 	<a name="star" class="btn btn-default btn-small" href="/userInput">
 		<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>등록하기
 	</a>
+	{{/if}}
 </template>
